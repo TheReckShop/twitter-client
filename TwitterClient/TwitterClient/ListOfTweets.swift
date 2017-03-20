@@ -20,4 +20,15 @@ class ListOfTweets {
         self.tweetContainer.append(tweet)
     }
     
+    func remove(tweet: Tweet){
+        self.tweetContainer.filter { (tweetItem) -> Bool in
+            return tweet.id != tweetItem.id
+        }
+        
+    }
+    
+    func getTweet(index: Int) -> Tweet{
+        return self.tweetContainer[index]
+    }
+    
 }

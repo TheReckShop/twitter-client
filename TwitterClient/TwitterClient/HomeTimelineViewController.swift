@@ -47,3 +47,5 @@ class HomeTimelineViewController: UIViewController, UITableViewDataSource {
     }
 
 }
+
+// We need to populate array of tweets (which is in ListOfTweets) ListOfTweets.shared.add(actual tweet being sent)
